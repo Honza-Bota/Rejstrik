@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rejstrik"
         mc:Ignorable="d"
-        Title="Rejstřík z txt" Height="450" Width="800">
+        Title="Rejstřík z txt" Height="450" Width="800"
+        FontWeight="Bold"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="6*"/>
+            <RowDefinition />
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Původní text" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+        <Label Content="Rejstřík" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
+        <TextBox Text="{Binding Text}" Grid.Row="1" Grid.Column="0" Margin="10"/>
+        <TextBox Text="{Binding Rejstrik}" Grid.Row="1" Grid.Column="1" Margin="10"/>
+        <Button Grid.Row="2" Grid.ColumnSpan="2" Margin="15,5" Content="Načti text" FontSize="20"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="15,5" Content="Vytvoř rejstřík" FontSize="20"/>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Margin="15,5" Content="Ulož rejstřík" FontSize="20"/>
     </Grid>
 </Window>
