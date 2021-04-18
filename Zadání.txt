@@ -1,0 +1,15 @@
+Rejstřík k souboru
+Termín: 22. duben 2021 23:59
+
+Pokyny:
+
+Vytvořte rejstřík k souboru ThreeMenInABoatEnglish.txt.
+Rejstřík má formát: slovo - 220, 3800, 5600, 
+kde slovo je rejstříkové slovo a čísla jsou čísla řádků na kterých se slovo nachází. 
+Spojky a předložky v rejstříku neuvádějte. 
+Rejstřík vypište do souboru.
+
+Buttons: Načíst, Přeložit na rejstřík, Uložit
+Textboxes: Původní text, rejsřík
+Provedení WPF
+Načtení a uložení přes formuláře
