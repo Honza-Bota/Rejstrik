@@ -17,16 +17,18 @@
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="6*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition />
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Label Content="Původní text" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
         <Label Content="Rejstřík" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25"/>
-        <TextBox Text="{Binding Text}" Grid.Row="1" Grid.Column="0" Margin="10"/>
-        <TextBox Text="{Binding Rejstrik}" Grid.Row="1" Grid.Column="1" Margin="10"/>
-        <Button Grid.Row="2" Grid.ColumnSpan="2" Margin="15,5" Content="Načti text" FontSize="20"/>
-        <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="15,5" Content="Vytvoř rejstřík" FontSize="20"/>
-        <Button Grid.Row="4" Grid.ColumnSpan="2" Margin="15,5" Content="Ulož rejstřík" FontSize="20"/>
+        <TextBox Text="{Binding Text}" Grid.Row="1" Grid.Column="0" Margin="10" FontWeight="Normal"/>
+        <TextBox Text="{Binding Rejstrik}" Grid.Row="1" Grid.Column="1" Margin="10" FontWeight="Normal"/>
+        <ProgressBar Value="{Binding Progres}" Grid.Row="2" Grid.ColumnSpan="2" Margin="15,2" Background="Transparent" BorderThickness="0"/>
+        <Button Grid.Row="3" Grid.ColumnSpan="2" Margin="15,5" Content="Načti text" FontSize="20"/>
+        <Button Grid.Row="4" Grid.ColumnSpan="2" Margin="15,5" Content="Vytvoř rejstřík" FontSize="20"/>
+        <Button Grid.Row="5" Grid.ColumnSpan="2" Margin="15,5" Content="Ulož rejstřík" FontSize="20"/>
     </Grid>
 </Window>
