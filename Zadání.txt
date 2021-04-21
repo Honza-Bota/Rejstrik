@@ -9,6 +9,7 @@ kde slovo je rejstříkové slovo a čísla jsou čísla řádků na kterých se
 Spojky a předložky v rejstříku neuvádějte. 
 Rejstřík vypište do souboru.
 
+_______________________________________________________
 Buttons: Načíst, Přeložit na rejstřík, Uložit
 Textboxes: Původní text, rejsřík
 Provedení WPF
